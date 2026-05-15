@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-<html>
-<head lang="uk">
+<html lang="uk">
+<head>
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Список покупок</title>
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
-	<span class="product-item">
-		Apple
-		<span class="amount">4</span>
-	</span>
+    <main class="container">
+        <section class="shopping-list-section">
+            <div class="add-item-row">
+                <input type="text" id="new-item-input" placeholder="Назва товару">
+                <button id="add-btn" class="btn btn-blue" data-tooltip="Додати новий товар">Додати</button>
+            </div>
+            
+            <ul id="items-list" class="items-list">
+                
+                <li class="item-row is-bought">
+                    <span class="item-name">Помідори</span>
+                    <div class="item-controls">
+                        <button class="btn btn-minus btn-light" data-tooltip="Зменшити кількість">-</button>
+                        <span class="amount-display">2</span>
+                        <button class="btn btn-plus btn-green" data-tooltip="Збільшити кількість">+</button>
+                        <button class="btn btn-gray btn-status" data-tooltip="Скасувати покупку">Не куплено</button>
+                        <button class="btn btn-red btn-delete" data-tooltip="Видалити товар">✖</button>
+                    </div>
+                </li>
+
+                <li class="item-row">
+                    <span class="item-name">Печиво</span>
+                    <div class="item-controls">
+                        <button class="btn btn-minus btn-red" data-tooltip="Зменшити кількість">-</button>
+                        <span class="amount-display">2</span>
+                        <button class="btn btn-plus btn-green" data-tooltip="Збільшити кількість">+</button>
+                        <button class="btn btn-gray btn-status" data-tooltip="Відмітити як куплене">Куплено</button>
+                        <button class="btn btn-red btn-delete" data-tooltip="Видалити товар">✖</button>
+                    </div>
+                </li>
+
+                <li class="item-row">
+                    <span class="item-name item-highlighted">Сир</span>
+                    <div class="item-controls">
+                        <button class="btn btn-minus btn-light" data-tooltip="Зменшити кількість">-</button>
+                        <span class="amount-display">1</span>
+                        <button class="btn btn-plus btn-green" data-tooltip="Збільшити кількість">+</button>
+                        <button class="btn btn-gray btn-status" data-tooltip="Відмітити як куплене">Куплено</button>
+                        <button class="btn btn-red btn-delete" data-tooltip="Видалити товар">✖</button>
+                    </div>
+                </li>
+                
+            </ul>
+        </section>
+
+        <aside class="stats-section">
+            <div class="stats-card">
+                <h2>Залишилося</h2>
+                <div id="remaining-tags" class="tags-container">
+                    <div class="tag">Печиво <span class="tag-amount">2</span></div>
+                    <div class="tag">Сир <span class="tag-amount">1</span></div>
+                </div>
+            </div>
+            <div class="stats-card">
+                <h2>Куплено</h2>
+                <div id="bought-tags" class="tags-container">
+                    <div class="tag" style="text-decoration: line-through;">Помідори <span class="tag-amount">2</span></div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <div class="badge">
+        <span class="badge-title">Buy List</span>
+        <span class="badge-author">Created by:<br>Arina Khmel</span>
+    </div>
+
 </body>
 </html>
