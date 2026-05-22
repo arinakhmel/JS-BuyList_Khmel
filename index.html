@@ -15,40 +15,6 @@
             </div>
             
             <ul id="items-list" class="items-list">
-                
-                <li class="item-row is-bought">
-                    <span class="item-name">Помідори</span>
-                    <div class="item-controls">
-                        <button class="btn btn-minus btn-light" data-tooltip="Зменшити кількість">-</button>
-                        <span class="amount-display">2</span>
-                        <button class="btn btn-plus btn-green" data-tooltip="Збільшити кількість">+</button>
-                        <button class="btn btn-gray btn-status" data-tooltip="Скасувати покупку">Не куплено</button>
-                        <button class="btn btn-red btn-delete" data-tooltip="Видалити товар">✖</button>
-                    </div>
-                </li>
-
-                <li class="item-row">
-                    <span class="item-name">Печиво</span>
-                    <div class="item-controls">
-                        <button class="btn btn-minus btn-red" data-tooltip="Зменшити кількість">-</button>
-                        <span class="amount-display">2</span>
-                        <button class="btn btn-plus btn-green" data-tooltip="Збільшити кількість">+</button>
-                        <button class="btn btn-gray btn-status" data-tooltip="Відмітити як куплене">Куплено</button>
-                        <button class="btn btn-red btn-delete" data-tooltip="Видалити товар">✖</button>
-                    </div>
-                </li>
-
-                <li class="item-row">
-                    <span class="item-name item-highlighted">Сир</span>
-                    <div class="item-controls">
-                        <button class="btn btn-minus btn-light" data-tooltip="Зменшити кількість">-</button>
-                        <span class="amount-display">1</span>
-                        <button class="btn btn-plus btn-green" data-tooltip="Збільшити кількість">+</button>
-                        <button class="btn btn-gray btn-status" data-tooltip="Відмітити як куплене">Куплено</button>
-                        <button class="btn btn-red btn-delete" data-tooltip="Видалити товар">✖</button>
-                    </div>
-                </li>
-                
             </ul>
         </section>
 
@@ -56,14 +22,11 @@
             <div class="stats-card">
                 <h2>Залишилося</h2>
                 <div id="remaining-tags" class="tags-container">
-                    <div class="tag">Печиво <span class="tag-amount">2</span></div>
-                    <div class="tag">Сир <span class="tag-amount">1</span></div>
                 </div>
             </div>
             <div class="stats-card">
                 <h2>Куплено</h2>
                 <div id="bought-tags" class="tags-container">
-                    <div class="tag" style="text-decoration: line-through;">Помідори <span class="tag-amount">2</span></div>
                 </div>
             </div>
         </aside>
@@ -73,6 +36,6 @@
         <span class="badge-title">Buy List</span>
         <span class="badge-author">Created by:<br>Arina Khmel</span>
     </div>
-
+    <script src="actions.js"></script>
 </body>
 </html>
