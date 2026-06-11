@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>П'ятнашки</title>
+    <link href="https://cdn.webdatarocks.com/latest/webdatarocks.min.css" rel="stylesheet" />
+    <script src="https://cdn.webdatarocks.com/latest/webdatarocks.toolbar.min.js"></script>
+    <script src="https://cdn.webdatarocks.com/latest/webdatarocks.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="scoreboard">
+        <div>Кроки: <span id="moves-count">0</span></div>
+        <div>Статус: <span id="game-status">Гра триває</span></div>
+        <button id="give-up-btn" class="btn">Здатися 🏳️</button>
+    </div>
+
+    <div class="controls-panel">
+        <button id="restart-btn" class="btn hidden">Грати знову 🔄</button>
+        <button id="clear-btn" class="btn">Очистити таблицю результатів 🗑️</button>
+    </div>
+
+    <div id="wdr-component"></div>
+
+    <div id="leaderboard-container" class="table-wrapper"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>

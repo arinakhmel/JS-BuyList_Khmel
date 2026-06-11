@@ -1,0 +1,95 @@
+body { 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    padding: 20px; 
+    background: #f9f9f9; 
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#scoreboard {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.win-status { color: #2ecc71; }
+.lose-status { color: #e74c3c; }
+
+.btn {
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+#give-up-btn { background: #e74c3c; }
+#give-up-btn:hover { background: #c0392b; }
+
+#restart-btn { background: #3498db; }
+#restart-btn:hover { background: #2980b9; }
+
+#clear-btn { background: #7f8c8d; }
+#clear-btn:hover { background: #95a5a6; }
+
+.hidden { display: none !important; }
+
+.controls-panel {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.table-wrapper { margin-top: 2rem; overflow-x: auto; }
+table { border-collapse: collapse; width: 100%; min-width: 400px; background: #fff; }
+th, td { border: 2px solid #000; padding: 10px; text-align: center; font-size: 1.1rem; }
+
+.diagonal-split {
+    position: relative;
+    background: linear-gradient(to top right, transparent calc(50% - 1px), #000 calc(50% - 1px), #000 calc(50% + 1px), transparent calc(50% + 1px));
+    height: 60px; min-width: 140px;
+}
+.diagonal-split .top-right { position: absolute; top: 4px; right: 8px; }
+.diagonal-split .bottom-left { position: absolute; bottom: 4px; left: 8px; }
+
+#wdr-component .wdr-grid-layout .wdr-cell .tile-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 24px;
+    width: calc(100% - 4px);
+    margin: 2px auto;
+    
+    background-color: #3498db; 
+    color: #ffffff; 
+    font-weight: bold; 
+    font-family: 'Calibri', sans-serif; 
+    font-size: 15px;
+    border-radius: 6px; 
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+#wdr-component .wdr-grid-layout .wdr-cell .tile-empty {
+    height: 24px; 
+    width: calc(100% - 4px);
+    margin: 2px auto;
+    background-color: #e0e0e0; 
+    border-radius: 6px; 
+}
+
+.empty-leaderboard {
+    color: #666; 
+    font-style: italic;
+}
